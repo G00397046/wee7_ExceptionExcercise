@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class UsingTryCatch {
     public static void main(String[] args) {
+        getInt();
+    }
+
+    public static void getInt() {
         try{
             System.out.println("\nPlease enter a number between 0-9 : ");
             Scanner input = new Scanner(System.in);
@@ -14,12 +18,13 @@ public class UsingTryCatch {
             }
             else{
                 System.out.println("Number out of range");
+                getInt();
             }
 
         }
         catch (InputMismatchException e){
             System.out.printf("\nNot a valid number");
-
+            getInt();
         }
     }
 }
