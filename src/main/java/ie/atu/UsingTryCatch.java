@@ -18,7 +18,7 @@ public class UsingTryCatch {
 
         }
         catch (InputMismatchException e){
-            System.out.printf("Not a valid number\n");
+            System.out.printf("\nNot a valid number");
 
         }
     }
